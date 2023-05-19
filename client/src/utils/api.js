@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:3000/proxy';
+const API_BASE_URL = 'https://react-chat-screen.onrender.com/proxy';
 
 export async function getChatData(page) {
   const url = `${API_BASE_URL}?page=${page}`;
