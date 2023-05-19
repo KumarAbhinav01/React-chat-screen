@@ -12,7 +12,7 @@ const Chats = () => {
 
   useEffect(() => {
     fetchChats();
-  }, []);
+  }, []); 
 
   useEffect(() => {
     const container = containerRef.current;
