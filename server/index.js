@@ -5,7 +5,7 @@ const app = express();
 
 // Enable CORS
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://react-chat-screen-u1nf.vercel.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://react-chat-screen.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
