@@ -1,0 +1,16 @@
+{
+    "functions": {
+      "api": {
+        "handler": "server.js",
+        "memory": 512,
+        "maxDuration": 10
+      }
+    },
+    "rewrites": [
+      {
+        "source": "/proxy/:page*",
+        "destination": "/api/proxy?page=:page*"
+      }
+    ]
+  }
+  
