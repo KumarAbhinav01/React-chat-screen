@@ -3,6 +3,14 @@ const axios = require('axios');
 
 const app = express();
 
+// Enable CORS
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://react-chat-screen-u1nf.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
 app.get('/proxy', async (req, res) => {
   const { page } = req.query;
   const apiUrl = `http://3.111.128.67/assignment/chat?page=${page}`;
