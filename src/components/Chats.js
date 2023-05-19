@@ -7,7 +7,7 @@ const Chats = () => {
   const [chats, setChats] = useState([]);
   const [firstDate, setFirstDate] = useState(null);
   const [receiverId, setReceiverId] = useState('');
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(0);
   const containerRef = useRef(null);
 
   useEffect(() => {
